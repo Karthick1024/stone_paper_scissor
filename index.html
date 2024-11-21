@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid game-container">
+      <h1 class="text-center title">Rock-Paper-Scissors</h1>
+      <div class="game-buttons text-center">
+        <button onclick="playermove('rock');" class="game-btn rock">
+          🪨 Stone
+        </button>
+        <button onclick="playermove('paper');" class="game-btn paper">
+          📄 Paper
+        </button>
+        <button onclick="playermove('scissor');" class="game-btn scissor">
+          ✂️ Scissor
+        </button>
+      </div>
+      <div class="text-center">
+        <button class="reset-btn" onclick="reset()">🔄 Reset Score</button>
+      </div>
+      <div class="game-result text-center">
+        <p id="result" class="result-text">Result: </p>
+        <p id="points" class="score-text">Wins: 0, Losses: 0, Ties: 0</p>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
